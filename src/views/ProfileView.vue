@@ -23,6 +23,10 @@ async function saveChanges() {
 <template>
   <div class="container mt-5">
     <h1>Profile</h1>
+    <div class="mb-3">
+      <h5 class="mb-3">Avatar</h5>
+      <img id="inputName" src="@/assets/images/man2.png" width="128" alt="avatar" />
+    </div>
     <div class="mb-3 mt-5">
       <label for="inputEmail" class="form-label">Email address</label>
       <input
@@ -36,10 +40,6 @@ async function saveChanges() {
     <div class="mb-3">
       <label for="inputName" class="form-label">Name</label>
       <input type="email" class="form-control" id="inputName" v-model="profileStore.profile.name" />
-    </div>
-    <div class="mb-3">
-      <h5 class="mb-3">Avatar</h5>
-      <img id="inputName" src="@/assets/man.png" alt="avatar" />
     </div>
     <h3>Interests</h3>
     <div

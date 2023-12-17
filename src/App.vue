@@ -7,18 +7,21 @@ import BottomNavigationBar from './components/BottomNavigationBar.vue';
 <template>
   <main>
     <NavBar v-if="!$route.meta.hideNavbar" />
-    <RouterView />
+    <RouterView :class="{ mleft: !$route.meta.hideNavbar, mbottom: !$route.meta.hideNavbar }" />
   </main>
   <BottomNavigationBar v-if="!$route.meta.hideNavbar" />
 </template>
 
 <style scoped>
-  main {
-    display: flex;
-    height: 100vh;
-    /* max-height: 100vh; */
-    /* flex-wrap: nowrap; */
-    /* overflow-x: auto; */
-    /* overflow-y: hidden; */
+@media only screen and (min-width: 768px) {
+  .mleft {
+    margin-left: 300px;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .mbottom {
+    margin-bottom: 80px;
+  }
+}
 </style>

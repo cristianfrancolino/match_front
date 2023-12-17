@@ -106,6 +106,9 @@ async function logout() {
 <style scoped>
 #sidebar {
   width: 280px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   /* background-color: #281B5A; */
 }
 
