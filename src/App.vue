@@ -15,13 +15,13 @@ import BottomNavigationBar from './components/BottomNavigationBar.vue';
 <style scoped>
 @media only screen and (min-width: 768px) {
   .mleft {
-    margin-left: 300px;
+    padding-left: 300px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .mbottom {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 }
 </style>
