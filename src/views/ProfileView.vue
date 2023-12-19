@@ -2,14 +2,13 @@
 import { onMounted, ref } from 'vue';
 import { useProfileStore } from '../stores/profile';
 import { useAccountStore } from '../stores/account';
-import { useRouter, useRoute } from 'vue-router';
+import { useRouter } from 'vue-router';
 
 const profileStore = useProfileStore();
 const saving = ref(false);
 const loading = ref(false);
 const accountStore = useAccountStore();
 const router = useRouter();
-const route = useRoute();
 
 onMounted(async () => {
   await getProfile();
