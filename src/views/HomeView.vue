@@ -19,6 +19,7 @@ async function getDesires() {
 <template>
   <div class="container mt-5">
     <h1 class="mb-5">Desires</h1>
+    <p>Test: {{ $t('test') }}</p>
     <div class="card mb-3" v-for="desire in desireStore.desires" :key="desire.id">
       <h5 class="card-header">{{ desire.name }}</h5>
       <div class="card-body">
