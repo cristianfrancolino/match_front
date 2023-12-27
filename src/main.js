@@ -13,7 +13,7 @@ import router from './router';
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
 
 const i18n = createI18n({
-  locale: 'EN',
+  locale: 'ES',
   messages: {
     EN: EN,
     ES: ES,

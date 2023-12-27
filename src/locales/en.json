@@ -1,3 +1,12 @@
 {
-    "test": "Hello world"
+    "test": "Hello world",
+    "desires": "Desires",
+    "home": "Home",
+    "profile": "Profile",
+    "signout": "Sign out",
+    "email_address": "Email address",
+    "name": "Name",
+    "interests": "Interests",
+    "save_changes": "Save changes",
+    "less_than_1km": "Less than 1km"
 }
